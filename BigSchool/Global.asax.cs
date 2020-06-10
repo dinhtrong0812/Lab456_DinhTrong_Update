@@ -18,4 +18,4 @@ namespace BigSchool
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
-}
+}   
