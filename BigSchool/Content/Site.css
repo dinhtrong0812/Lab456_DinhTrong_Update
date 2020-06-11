@@ -1,7 +1,19 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿.navbar-inverse{
+    background-color: #ffd800;
+    border-color:##00ffff
 }
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+    .navbar-inverse .navbar-brand{
+        color:white;    
+    }
+    
+body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
