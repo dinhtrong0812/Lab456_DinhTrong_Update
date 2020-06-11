@@ -6,7 +6,7 @@ using System.Globalization;
 using componentModel.DataAnnotations;
 
 
-namespace BigSchool.ViewModels
+namespace BigSchool.ViewModels 
 {
     public class FutureDate : ValidationAttribute 
     {
