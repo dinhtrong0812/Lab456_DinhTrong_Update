@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Globalization;
+using System.ComponentModel.DataAnnotations;
 
 namespace BigSchool.ViewModels
 {
@@ -13,9 +14,10 @@ namespace BigSchool.ViewModels
             DateTime dateTime;
             var isValid = DateTime.TryParseExact(Convert.ToString(value),
                 "HH:mm",
-                CultureInfo, CurrentCulture,
+                CultureInfo.CurrentCulture,
                 DateTimeStyles.None,
                 out dateTime);
+            return isValid;
         }
     }
 }

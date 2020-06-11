@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Globalization;
-using componentModel.DataAnnotations;
-
+using System.ComponentModel.DataAnnotations;
 
 namespace BigSchool.ViewModels  
 {
@@ -17,8 +16,8 @@ namespace BigSchool.ViewModels
                 "dd/M/yyyy",
                 CultureInfo.CurrentCulture,
                 DateTimeStyles.None,
-                out DateTime);
-            return(isValid && datetime > DateTime.Now);
+                out dateTime);
+            return(isValid && dateTime > DateTime.Now);
 
         }
     }
