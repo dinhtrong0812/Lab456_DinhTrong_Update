@@ -35,7 +35,7 @@ namespace BigSchool.Controllers
 
         [HttpDelete]
         public IHttpActionResult DeleteFollow(string Id)
-        {
+        { 
             var userId = User.Identity.GetUserId();
             var following = _dbContext.Followings.SingleOrDefault(f => f.FollowerId == userId && f.FolloweeId == Id);
             if (following == null)
