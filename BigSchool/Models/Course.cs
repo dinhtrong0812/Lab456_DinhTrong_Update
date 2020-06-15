@@ -11,7 +11,7 @@ namespace BigSchool.Models
         public int Id { get; set; }
         public ApplicationUser Lecturer { get; set; }
         [Required]
-        public string LecturId { get; set; }
+        public string LecturerId { get; set; }
         [Required]
         [StringLength(255)]
         public string Place { get; set; }
@@ -19,7 +19,6 @@ namespace BigSchool.Models
         public Category Category { get; set; }
         [Required]
         public byte CategoryId { get; set; }
-        public string LecturerId { get; internal set; }
     }
    
 }

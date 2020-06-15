@@ -214,8 +214,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AttendancesController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\FollowingsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DTOs\AttendanceDto.cs" />
+    <Compile Include="DTOs\FollowingDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -235,12 +238,19 @@
     <Compile Include="Migrations\202006120327008_AddAttendance.Designer.cs">
       <DependentUpon>202006120327008_AddAttendance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006150312098_UpdateCourse.cs" />
+    <Compile Include="Migrations\202006150312098_UpdateCourse.Designer.cs">
+      <DependentUpon>202006150312098_UpdateCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\Following.cs" />
+    <Compile Include="Models\Following1.cs" />
+    <Compile Include="Models\Following2.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -333,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006120327008_AddAttendance.resx">
       <DependentUpon>202006120327008_AddAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006150312098_UpdateCourse.resx">
+      <DependentUpon>202006150312098_UpdateCourse.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
