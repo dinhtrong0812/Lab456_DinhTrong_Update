@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Data.Entity;
 
 namespace BigSchool.Controllers
 {
@@ -19,7 +20,7 @@ namespace BigSchool.Controllers
         {
             var upcommingCourses = _dbContext.Courses
               .Include(c => c.Lecturer)
-              .Include(c => c.Categogy)
+              .Include(c => c.Category)
               .Where(c => c.DateTime > DateTime.Now);
             return View(upcommingCourses);
         }

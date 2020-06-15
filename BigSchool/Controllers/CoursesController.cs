@@ -15,7 +15,16 @@ namespace BigSchool.Controllers
         public CoursesController()
         {
             _dbContext = new ApplicationDbContext();
-        }      
+        }
+        [Authorize]
+        public ActionResult Create()
+        {
+            var viewModel = new CourseViewModel
+            {
+                Categories = _dbContext.Categories.ToList()
+            };
+            return View(viewModel);
+        }
         // GET: Courses
         [Authorize]
         [HttpPost]
@@ -38,7 +47,7 @@ namespace BigSchool.Controllers
             };
             _dbContext.Courses.Add(course);
             _dbContext.SaveChanges();
-                
+
             return RedirectToAction("Index", "Home");
         }
     }
