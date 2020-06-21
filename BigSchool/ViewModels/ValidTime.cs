@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 using System.Linq;
 using System.Web;
-using System.Globalization;
-using System.ComponentModel.DataAnnotations;
 
 namespace BigSchool.ViewModels
 {
@@ -17,6 +17,7 @@ namespace BigSchool.ViewModels
                 CultureInfo.CurrentCulture,
                 DateTimeStyles.None,
                 out dateTime);
+
             return isValid;
         }
     }

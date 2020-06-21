@@ -1,19 +1,7 @@
-﻿.navbar-inverse{
-    background-color: #ffd800;
-    border-color:##00ffff
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
-.navbar-inverse .navbar-nav > li > a {
-    color: #ffffff;
-}
-    .navbar-inverse .navbar-brand{
-        color:white;    
-    }
-    
-body {
-        padding-top: 50px;
-        padding-bottom: 20px;
-    }
-
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -21,67 +9,34 @@ body {
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+
+.navbar-inverse {
+    background-color: #00ff21;
+    border-color: #ff0000;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
 .course {
     list-style: none;
 }
-.course > li {
+
+    .course > li {
         position: relative;
         margin-bottom: 30px;
-        float: left;
-        margin-left: 55px;
- }
+    }
 
-.course > li .date {
-            background-color: red;
-            color: white;
+        .course > li .date {
             text-align: center;
+            background-color: #00ff21;
+            color: white;
             width: 60px;
-            border-radius: 9px;
- }
-
-.course > li .date .month {
-text-transform: uppercase;
- font-size: 14px;
- font-weight: bold;
-padding: 2px 6px;
-}
-
-.course > li .date .day {
- background: #ebebeb;
- color: #333;
-font-size: 20px;
- padding: 6px 12px;
- }
-
-.course > li .details {
-position: absolute;
- top: 0;
- left: 70px;
+            border-radius: 8px;
         }
 
- .course > li .details .artist {
-   font-weight: bold;
-  display: block;
- }
-
-.course > li .details .genre {
-    font-size: 14px;
-    display: block;
-    margin-bottom: 4px;
-            }
+        .course > li .details {
+            position: absolute;
+            top: 0;
+            left: 70px;
+        }
 
         .course > li .action {
             display: none;
